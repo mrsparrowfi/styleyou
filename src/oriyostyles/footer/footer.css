@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Odibee+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
+
+
+:root {
+    --bg-color: rgba(0, 0, 0, 0.05);
+    --text-color: rgba(0, 0, 0, 0.9);
+    --font-color: rgb(12, 0, 0);
+    --btn-color: rgb(11, 7, 238);
+    --icon-color: rgb(11, 7, 238);
+
+    --caveat-font-family: 'Caveat', cursive;
+    --dafoe-font-family: 'Mr Dafoe', cursive;
+    --saint-font-family: 'Mrs Saint Delafield', cursive;
+    --odibee-font-family: 'Odibee Sans', cursive;
+    --playfair-font-family: 'Playfair Display', serif;
+    --exo-font-family: 'Exo', sans-serif;
+    --exo2-font-family: 'Exo 2', sans-serif;
+}
+
+footer {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.footer--content {
+    display: flex;
+    margin: 0;
+    padding: 0 15%;
+    padding-bottom: 5rem;
+    border-top: 1px dotted rgba(109, 89, 224, 0.5);
+    background-image: radial-gradient(circle farthest-side, #aaffc1 5%, transparent);
+}
+
+.footer--content .content--product,
+.footer--content .content--policy,
+.footer--content .social--icons,
+.footer--content .context--contact {
+    padding-top: 7.5rem;
+    padding-right: .5rem;
+}
+
+.footer--content .content--product h6,
+.footer--content .content--policy h6 {
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .05rem;
+    word-spacing: .1rem;
+    font-family: var(--caveat-font-family);
+}
+
+.footer--content .content--product h6 i,
+.footer--content .content--policy h6 i {
+    font-size: 2rem;
+}
+
+.footer--content .content--product div,
+.footer--content .content--policy div {
+    margin: .5rem 0;
+    padding-left: .5rem;
+}
+
+.footer--content .content--product div i,
+.footer--content .content--product div span,
+.footer--content .content--policy div i,
+.footer--content .content--policy div span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    font-family: var(--exo-font-family);
+}
+
+.footer--content .footer--logo {
+    margin-top: -4rem;
+}
+
+.footer--content .footer--logo .logo--img {
+    text-align: center;
+}
+
+.footer--content .footer--logo .logo--img img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.footer--content .footer--logo .logo--wrapper {
+    margin: 1.5rem auto;
+    background-color: transparent;
+}
+
+.footer--content .footer--logo .logo--wrapper svg {
+    font-family: "Mrs Saint Delafield", sans-serif;
+}
+
+.footer--content .footer--logo .logo--wrapper svg text {
+    animation: stroke 7s infinite alternate;
+    stroke-width: 0;
+    stroke: #000000;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+@keyframes stroke {
+
+    0%{
+        fill: rgba(255, 255, 255, 0);
+        stroke: rgb(1, 8, 19);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 0;
+    }
+
+    70%{
+        fill: rgba(72,138,204,0);
+        stroke: rgb(1, 5, 14);
+    }
+
+    80%{
+        fill: rgba(72,138,204,0);
+        stroke: rgba(54,95,160,1);
+        stroke-width: 1;
+    }
+
+    100%{
+        fill: rgba(72,138,204,1);
+        stroke: rgba(54,95,160,0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+
+}
+
+.footer--content .footer--logo h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: .15rem;
+    font-family: var(--exo-font-family);
+}
+
+.context--contact h2,
+.social--icons h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: .25rem;
+    padding-bottom: .5rem;
+    font-family: var(--caveat-font-family);
+}
+
+.context--contact h2 i,
+.social--icons h2 i {
+    font-size: 2rem;
+}
+
+.context--contact h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+    padding: .25rem 0;
+    color: rgb(0, 0, 0);
+    letter-spacing: .1rem;
+    font-family: var(--exo-font-family);
+}
+
+.context--contact h6 i {
+    font-size: 1.2rem;
+}
+
+.social--icons .content--icons {
+    display: flex;
+    gap: 0 .5rem;
+    margin: 1.25rem auto;
+    justify-content: center;
+}
+
+.social--icons .content--icons li {
+    padding: 0 .5rem;
+    cursor: pointer;
+    padding-top: .2rem;
+    border-radius: .5rem;
+    padding-bottom: .2rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.social--icons .content--icons li a i {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:  rgb(0, 0, 0);
+}
+
+.social--icons .content--icons li:hover {
+    background-color: rgb(0, 0, 255);
+}
+
+.social--icons .content--icons li:hover a i {
+    color: rgb(255, 255, 255);
+}
+
+.footer--logo .line--separator {
+    height: .1rem;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer--logo .first--line {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.footer--logo .second--line {
+    width: 30%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer--logo .third--line {
+    width: 30%;
+    margin-top: 2.5rem;
+}
+
+.footer--logo .fourth--line {
+    width: 15%;
+    margin-top: .75rem;
+}
+
+.footer--logo .fifth--line {
+    width: 7.5%;
+    margin-top: .75rem;
+}
+
+.footer--logo .sixth--line {
+    width: 3.75%;
+    margin-top: .75rem;
+}
+
+.footer--logo .seventh--line {
+    width: 1%;
+    margin-top: .75rem;
+}
+
+.content--copywrite {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-image: radial-gradient(circle farthest-side, rgba(230, 194, 148, 0.5) 5%, transparent);
+}
+
+.content--copywrite h6,
+.content--copywrite h6 a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .25rem;
+    color:  rgb(0, 0, 0);
+    font-family: var(--exo-font-family);
+}
+
+.footer--content .content--product .line--separator,
+.footer--content .content--policy .line--separator,
+.footer--content .context--contact .line--separator,
+.footer--content .social--icons .line--separator {
+    width: 80%;
+    height: .1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+/*-----------------------------CSS for Back2Top Button------------------------*/
+
+.btn--back2top {
+    position: fixed;
+    right: 10%;
+    padding: .5rem 1rem;
+    border-radius: 100%;
+    background: rgb(248, 246, 246);
+    box-shadow: var(--box-shadow-55);
+    color: #000;
+    text-align: center;
+}
+
+.btn--back2top {
+    bottom: 1.75rem;
+}
+
+.btn--back2top i {
+    font-size: 1.6rem;
+}
+
+.btn--back2top:hover {
+    background: var(--btn-color);
+    color: rgb(248, 246, 246);;
+}
